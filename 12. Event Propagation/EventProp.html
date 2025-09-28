@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-around;
+        }
+        #a {
+            border: 2px solid red;
+            width: 200px;
+            padding: 50px;
+        }
+
+        #b {
+            border: 2px solid red;
+            width: 100px;
+            padding: 50px;
+        }
+
+        #c {
+            border: 2px solid red;
+            width: 50px;
+            padding: 20px;
+        }
+
+        #d {
+            border: 2px solid skyblue;
+            width: 200px;
+            padding: 50px;
+        }
+
+        #e {
+            border: 2px solid skyblue;
+            width: 100px;
+            padding: 50px;
+        }
+
+        #f {
+            border: 2px solid skyblue;
+            width: 50px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="first">
+            <span>Parent</span>
+            <div id="a">
+                <span>Child</span>
+                <div id="b">
+                    <span>Grand Child</span>
+                    <div id="c">
+                        <button>Click</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <span>Parent</span>
+            <div id="d">
+                <span>Child</span>
+                <div id="e">
+                    <span>Grand Child</span>
+                    <div id="f">
+                        <button>Click</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./EventProp.js"></script>
+</body>
+
+</html>

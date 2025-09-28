@@ -1,0 +1,22 @@
+<!-- We can write javascript code in the html file inside head section or body section using script tag -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- There is one problem of writing javascript code inside head section, because html will execute top to bottom, so the script tag
+         will execute first before executing the body tag, if we target any html element inside script tag then we'll get an error that element
+         is not found.
+         To overcome this drawback we use async and defer.
+    -->
+    <script>
+        console.log("Header Section");
+    </script>
+</head>
+<body>
+    <script>
+        console.log("Body Section");
+    </script>
+</body>
+</html>
